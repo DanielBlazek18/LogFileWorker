@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import re
 import os, sys
+import shutil
 
 myList = []
 ipList = []
@@ -21,8 +22,12 @@ def findIpAdress():
             ipList += re.findall('[0-9]+(?:\.[0-9]+){3}', i)
 
 def saveResult(fileName):
+    ret = os.access("output", os.F_OK)
+    if ret == True:
+        shutil.rmtree('output')
+    
     path = "output"  
-    os.mkdir(path, 0775);    
+    os.mkdir(path, 0775); 
     count = 0
     count2 = 0
 
