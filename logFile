@@ -1,0 +1,3 @@
+Oct 13 09:39:10 s01 sshd[3007]: Accepted publickey for administrator from 78.102.189.154 port 61755 ssh2
+Oct 12 17:34:35 s01 sshd[2661]: Accepted publickey for administrator from 188.175.27.44 port 52446 ssh2
+Oct 12 17:34:32 s01 sshd[2661]: Address 188.175.27.44 maps to 188-175-27-44.client.rionet.cz, but this does not map 
